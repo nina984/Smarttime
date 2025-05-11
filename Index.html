@@ -1,133 +1,137 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex's Journey - NHSM</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Time Management for Students</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
             margin: 0;
             padding: 0;
-            color: #333;
         }
         header {
-            background-color: #6a1b9a;
+            background-color: #1e90ff;
             color: white;
-            padding: 30px;
             text-align: center;
-            position: relative;
+            padding: 20px;
         }
-        header img {
-            position: absolute;
-            left: 20px;
-            top: 10px;
-            height: 100px;
-            animation: floatIn 2s ease-in-out forwards;
-        }
-        @keyframes floatIn {
-            0% { transform: translateY(-100px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-        main {
-            padding: 40px;
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            text-transform: uppercase;
         }
         section {
-            margin-bottom: 50px;
-            background: white;
-            border-radius: 10px;
+            margin: 20px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        img, iframe {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            animation: zoomIn 2s ease-in-out;
         }
-        h1, h2, h3 {
-            color: #4a148c;
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
-        .emojis {
-            font-size: 1.5em;
+        h2 {
+            font-size: 28px;
+            color: #1e90ff;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .tips ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .tips li {
+            background-color: #e0f7fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         footer {
-            text-align: center;
-            padding: 30px;
-            background: #4a148c;
+            background-color: #1e90ff;
             color: white;
-            font-weight: bold;
-        }
-        .highlight {
-            background: #f3e5f5;
+            text-align: center;
             padding: 10px;
-            border-left: 5px solid #7b1fa2;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg" alt="Einstein saying hi">
-        <h1>Welcome to Alex's Colorful World at NHSM! <span class="emojis">🎓✨</span></h1>
-        <p>Here begins the journey of a confused student... but with a twist!</p>
-    </header>
-    <main>
-        <section>
-            <h2>The Confused Student - Meet Alex <span class="emojis">🤯📉</span></h2>
-            <p>Alex was your average student at NHSM. He studied hard, but his grades kept disappointing him. Like, come on, what gives?!</p>
-            <img src="https://i.imgur.com/WTzOa2I.jpg" alt="Alex confused">
-        </section><section>
-        <h2>Late-Night Realizations <span class="emojis">🌙💡</span></h2>
-        <p>One night, while sipping coffee stronger than his will to live, Alex discovered the real issue: he had no idea how to manage his time. That's when he met...</p>
-        <h3>The Eisenhower Matrix <span class="emojis">🧠✅</span></h3>
-        <p>The Eisenhower Matrix helps you sort tasks into four types:</p>
+
+<header>
+    <h1>Welcome to the Time Management Hub for NHSM Students!</h1>
+</header>
+
+<section>
+    <h2>Why Time Management Matters</h2>
+    <p>Meet Alex, a student just like you, struggling with managing his time. Even though he's studying hard, his grades aren't as good as he hoped. He's been reading, but something's missing...</p>
+    <img src="https://example.com/alex-image.jpg" alt="Alex studying" />
+
+    <h2>The Big Revelation</h2>
+    <p>After a long night of searching for answers, Alex discovers something life-changing: Time management is key! He learns about the Eisenhower Matrix and realizes that he's been spending too much time on tasks that aren't urgent or important. 🙈</p>
+
+    <h2>So, What is the Eisenhower Matrix?</h2>
+    <p>The Eisenhower Matrix is a time management tool that helps you prioritize tasks based on urgency and importance. It divides tasks into four categories:</p>
+    <ul>
+        <li><strong>Urgent and Important:</strong> Do it now! 📅</li>
+        <li><strong>Important, Not Urgent:</strong> Plan for it. ⏳</li>
+        <li><strong>Urgent, Not Important:</strong> Delegate if possible. 👥</li>
+        <li><strong>Not Urgent, Not Important:</strong> Avoid it! 🚫</li>
+    </ul>
+    <p>By applying this matrix, Alex started tackling his tasks more effectively, leading to a big improvement in his grades. Now he knows exactly where to focus his efforts. 🔥</p>
+    
+    <h2>Watch How Alex Transformed His Study Life</h2>
+    <video controls>
+        <source src="https://www.youtube.com/watch?v=vhGG2XDwAuE" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Other Time Management Techniques</h2>
+    <p>Besides the Eisenhower Matrix, here are a few more tips Alex used to boost his productivity:</p>
+    <ul>
+        <li><strong>Pomodoro Technique:</strong> Work for 25 minutes, then take a 5-minute break. Repeat! ⏱️</li>
+        <li><strong>Time Blocking:</strong> Set specific times for specific tasks during your day. 📅</li>
+        <li><strong>Daily and Weekly Reviews:</strong> Reflect on what you've done and plan ahead! 🔍</li>
+    </ul>
+
+    <div class="tips">
+        <h2>Time Management Tips for NHSM Students</h2>
         <ul>
-            <li><strong>Urgent & Important:</strong> Do it now!</li>
-            <li><strong>Important but Not Urgent:</strong> Schedule it.</li>
-            <li><strong>Urgent but Not Important:</strong> Delegate it.</li>
-            <li><strong>Not Urgent & Not Important:</strong> Bye Felicia! <span class="emojis">👋</span></li>
+            <li><strong>Start Early:</strong> Don't procrastinate, or you'll end up like Alex (and no one wants that!). 😅</li>
+            <li><strong>Set Realistic Goals:</strong> Break your tasks into smaller, manageable chunks. 🎯</li>
+            <li><strong>Take Breaks:</strong> Don't forget to recharge your brain! Go for a walk, or grab a snack. 🍎</li>
+            <li><strong>Use the Right Resources:</strong> Check out Bibmath and Exo7 for extra help with your studies. 📚</li>
+            <li><strong>Don't Forget to Sleep:</strong> It's hard to study when your brain is in zombie mode! 😴</li>
         </ul>
-        <img src="https://i.imgur.com/JZAj4Dg.png" alt="Eisenhower Matrix">
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>After Discovering Time Management <span class="emojis">📚🔥</span></h2>
-        <p>Alex started using techniques like Pomodoro, daily planning, and Eisenhower’s Matrix. Fast forward a few weeks — BAM! — his grades started rising!</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vhGG2XDwAuE" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <section>
-        <h2>Best YouTube Channels for NHSM Students <span class="emojis">🎥💪</span></h2>
-        <div class="highlight">
-            <p><strong>Algebra & Analysis:</strong></p>
-            <ul>
-                <li><a href="https://youtube.com/@asmakefkef" target="_blank">ASMA KEFKIF</a></li>
-                <li><a href="https://youtube.com/@wardamaths7987" target="_blank">Warda Maths</a></li>
-                <li><a href="https://youtube.com/@15minmathlr" target="_blank">15 min Math</a></li>
-            </ul>
-
-            <p><strong>Algorithms:</strong></p>
-            <ul>
-                <li><a href="https://youtube.com/@hassaneelbahi" target="_blank">Hassane el bahi</a></li>
-                <li><a href="https://youtube.com/@AymenDev" target="_blank">Aymen Dev</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Final Tips & Tricks <span class="emojis">📝⏰</span></h2>
-        <ul>
-            <li>Use Pomodoro: 25 min focus + 5 min break</li>
-            <li>Prioritize your subjects based on difficulty</li>
-            <li>Don’t ignore sleep — even geniuses like Einstein slept!</li>
-            <li>Stick to your schedule but be flexible!</li>
-        </ul>
-        <p class="highlight">My last advice from the bottom of my heart: Mastering your time is mastering your life. You got this!</p>
-    </section>
-</main>
 <footer>
-    Thank you for visiting our silly little website! <span class="emojis">😄📚</span> Hope you learned something — see you again soon!
+    <p>Thank you for visiting our website! We hope you've learned how to manage your time better. Remember, it's all about balance. Take care and good luck with your studies! 🚀</p>
 </footer>
 
 </body>
-  </html>
+</html>
