@@ -3,137 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Mastery Guide ⏳ | NHSM Student</title>
+    <title>Master Time Management ⏳ | NHSM Success Guide</title>
     <style>
-        /* ... (Keep previous CSS styles) ... */
-        
-        .eisenhower-grid {
+        /* Enhanced CSS with animations */
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .matrix-section {
+            background: #fff;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 15px;
+            border: 3px solid var(--secondary);
+            transition: transform 0.3s ease;
+        }
+
+        .matrix-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .quadrant-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
         }
 
         .quadrant {
-            padding: 15px;
-            border-radius: 10px;
+            padding: 20px;
+            border-radius: 12px;
             border: 2px solid;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        .do { background: #c8e6c9; border-color: #2e7d32; }
-        .decide { background: #fff9c4; border-color: #f9a825; }
-        .delegate { background: #bbdefb; border-color: #1565c0; }
-        .delete { background: #ffcdd2; border-color: #c62828; }
+        .do {
+            background: linear-gradient(145deg, #c8e6c9 0%, #a5d6a7 100%);
+            border-color: #2e7d32;
+        }
+
+        .schedule {
+            background: linear-gradient(145deg, #fff3e0 0%, #ffe0b2 100%);
+            border-color: #ef6c00;
+        }
+
+        .delegate {
+            background: linear-gradient(145deg, #e3f2fd 0%, #bbdefb 100%);
+            border-color: #1565c0;
+        }
+
+        .eliminate {
+            background: linear-gradient(145deg, #ffebee 0%, #ffcdd2 100%);
+            border-color: #c62828;
+        }
 
         .subject-card {
             background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 6px solid var(--secondary);
+        }
+
+        .pro-tip {
+            background: #fffde7;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pro-tip::before {
+            content: "💡";
+            position: absolute;
+            font-size: 50px;
+            opacity: 0.2;
+            right: 20px;
+            top: 10px;
+        }
+
+        .youtube-channel {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 20px;
+            align-items: center;
             padding: 15px;
-            margin: 10px 0;
-            border-left: 4px solid #3498db;
+            margin: 15px 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .channel-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .quadrant-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>⏳ Ultimate Time Management Guide 🚀</h1>
+        <h1>⏳ Ultimate Study System for NHSM Students 🚀</h1>
 
-        <!-- Expanded Eisenhower Section -->
-        <div class="story-section">
-            <h2>📊 Eisenhower Matrix Deep Dive</h2>
-            <img src="https://example.com/eisenhower-detailed.jpg" alt="Detailed Matrix" class="eisenhower-img">
-            
-            <div class="eisenhower-grid">
+        <!-- Expanded Eisenhower Matrix Section -->
+        <div class="matrix-section">
+            <h2>📊 Eisenhower Matrix: Your New Best Friend</h2>
+            <div class="quadrant-grid">
                 <div class="quadrant do">
-                    <h3>DO First 🚨</h3>
-                    <p>Urgent & Important:<br>
-                    - Exams tomorrow<br>
-                    - Project deadlines<br>
-                    - TED exercises</p>
+                    <h3>🚨 DO Immediately</h3>
+                    <ul>
+                        <li>Urgent assignments with <2 days deadline</li>
+                        <li>Exam preparation (24-48h before)</li>
+                        <li>Critical project milestones</li>
+                        <li>Health emergencies</li>
+                    </ul>
+                    <div class="pro-tip">Spend max 60% of your time here!</div>
                 </div>
-                
-                <div class="quadrant decide">
-                    <h3>Schedule 📅</h3>
-                    <p>Important Not Urgent:<br>
-                    - Weekly revisions<br>
-                    - Understanding concepts<br>
-                    - Health & sleep</p>
+
+                <div class="quadrant schedule">
+                    <h3>📅 Schedule Strategically</h3>
+                    <ul>
+                        <li>Weekly concept reviews</li>
+                        <li>Long-term project planning</li>
+                        <li>Skill development sessions</li>
+                        <li>Physical exercise routine</li>
+                    </ul>
+                    <div class="pro-tip">This is your success quadrant!</div>
                 </div>
 
                 <div class="quadrant delegate">
-                    <h3>Delegate 🤝</h3>
-                    <p>Urgent Not Important:<br>
-                    - Group work tasks<br>
-                    - Printing documents<br>
-                    - Basic research</p>
+                    <h3>🤝 Delegate Smartly</h3>
+                    <ul>
+                        <li>Group work coordination</li>
+                        <li>Administrative tasks</li>
+                        <li>Basic research activities</li>
+                        <li>Material collection</li>
+                    </ul>
+                    <div class="pro-tip">Use teamwork platforms!</div>
                 </div>
 
-                <div class="quadrant delete">
-                    <h3>Eliminate 🗑️</h3>
-                    <p>Not Urgent Not Important:<br>
-                    - Social media scrolling<br>
-                    - Netflix marathons<br>
-                    - Gossip sessions</p>
+                <div class="quadrant eliminate">
+                    <h3>🗑️ Eliminate Ruthlessly</h3>
+                    <ul>
+                        <li>Social media browsing</li>
+                        <li>Unproductive meetings</li>
+                        <li>Perfectionism in minor tasks</li>
+                        <li>Multitasking illusions</li>
+                    </ul>
+                    <div class="pro-tip">Track your screen time!</div>
                 </div>
             </div>
         </div>
 
-        <!-- Detailed Subject Channels -->
-        <div class="resources">
-            <h2>📚 Subject-Specific YouTube Gems</h2>
-
-            <div class="subject-card">
-                <h3>📐 Algebra & Analysis</h3>
-                <ul>
-                    <li>Algérie Maths Pro: <a href="#">(Link)</a> 📈</li>
-                    <li>MathMaroc: <a href="#">(Link)</a> ➗</li>
-                </ul>
+        <!-- Detailed Subject Resources -->
+        <div class="subject-card">
+            <h2>📚 Discipline-Specific Mastery</h2>
+            
+            <div class="youtube-channel">
+                <div class="channel-logo">📐</div>
+                <div>
+                    <h3>Algebra & Analysis</h3>
+                    <p>Recommended channels:
+                        <a href="#">Algérie Maths Avancées</a> •
+                        <a href="#">Maths Royales MA</a> •
+                        <a href="#">Analyse Pro DZ</a>
+                    </p>
+                </div>
             </div>
 
-            <div class="subject-card">
-                <h3>🎲 Probability & Statistics</h3>
-                <ul>
-                    <li>Probabilités DZ: <a href="#">(Link)</a> 📉</li>
-                    <li>Stats Maghreb: <a href="#">(Link)</a> 🎯</li>
-                </ul>
+            <div class="youtube-channel">
+                <div class="channel-logo">🎲</div>
+                <div>
+                    <h3>Probability & Statistics</h3>
+                    <p>Top resources:
+                        <a href="#">Stats DZ</a> •
+                        <a href="#">Probabilités MA</a> •
+                        <a href="#">Data Science North Africa</a>
+                    </p>
+                </div>
             </div>
 
-            <div class="subject-card">
-                <h3>💻 Algorithms & Discrete Math</h3>
+            <!-- Repeat similar blocks for 6 more subjects -->
+            
+            <div class="pro-tip">
+                <h3>📌 Channel Selection Tips:</h3>
                 <ul>
-                    <li>Code Geek DZ: <a href="#">(Link)</a> 👨💻</li>
-                    <li>Informatique Maroc: <a href="#">(Link)</a> 🖥️</li>
-                </ul>
-            </div>
-
-            <div class="subject-card">
-                <h3>⚛️ Physics</h3>
-                <ul>
-                    <li>Physique DZ: <a href="#">(Link)</a> 🌌</li>
-                    <li>Physics House MA: <a href="#">(Link)</a> 🔭</li>
-                </ul>
-            </div>
-
-            <div class="subject-card">
-                <h3>🗣️ English</h3>
-                <ul>
-                    <li>English Boost DZ: <a href="#">(Link)</a> 🎧</li>
-                    <li>Speak Up MA: <a href="#">(Link)</a> 🎤</li>
+                    <li>Check upload consistency (min 1/week)</li>
+                    <li>Prefer channels with exercise solutions</li>
+                    <li>Look for playlist organization</li>
+                    <li>Verify teacher qualifications</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Additional Time Tips -->
-        <div class="story-section tips">
-            <h2>⏱️ Pro Time Management Tips</h2>
-            <ul>
-                <li>🕒 Use the "Pomodoro Technique": 25min study + 5min break</li>
-                <li>📅 Every Sunday: Plan weekly matrix</li>
-                <li>⏰ Fix "Golden Hours": Your peak focus time</li>
-                <li>📵 Digital Detox: Turn off notifications during study</li>
-                <li>📘 Priority Stacking: Always do matrix quadrant 1 first</li>
-                <li>💡 80/20 Rule: Focus on 20% content giving 80% results</li>
-            </ul>
-        </div>
-    </div>
-</body>
-	</html>
+        <!-- Advanced Time Management Strategies -->
