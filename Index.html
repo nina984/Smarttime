@@ -1,219 +1,328 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Time Management for Students</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami's Study Success Story</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #3498db;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #3498db;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .important-urgent {
+            background-color: #ffebee;
+            padding: 15px;
+            border-left: 5px solid #e53935;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .important-not-urgent {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 5px solid #2196f3;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .not-important-urgent {
+            background-color: #fffde7;
+            padding: 15px;
+            border-left: 5px solid #fdd835;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .not-important-not-urgent {
+            background-color: #f1f8e9;
+            padding: 15px;
+            border-left: 5px solid #81c784;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .time-management {
+            margin-top: 30px;
+            background-color: #f9e79f;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .sami-tips {
+            margin-top: 30px;
+            background-color: #aed581;
+            padding: 20px;
+            border-radius: 6px;
+            color: #fff;
+        }
+
+        .sami-tips h3 {
+            color: #fff;
+        }
+
+        .golden-resources {
+            margin-top: 30px;
+            background-color: #90caf9;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .golden-resources h3 {
+            color: #fff;
+        }
+
+        .youtube-channels ul {
+            margin-left: 20px;
+        }
+
+        .youtube-channels li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #bbdefb;
+        }
+
+        .youtube-channels li:last-child {
+            border-bottom: none;
+        }
+
+        .final-words {
+            margin-top: 40px;
+            text-align: center;
+            font-style: italic;
+            color: #777;
+        }
+
+        .hashtag {
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-r from-blue-100 to-purple-200 min-h-screen font-sans">
+<body>
+    <div class="container">
+        <h1>Sami's Study Success Story</h1>
+        <p>Once upon a time, in the land of NHSM, there was a poor student named Sami... He studied so hard his eyes almost bled, lectures felt like oil fields, and exercises were landmines. Every day he’d say, “This time, I’m getting an 18!” But when results came... it was an 8.He’d ask himself, “Am I on the wrong planet? Does the teacher hate my face? Or am I just dreaming I’m studying?”</p>
+        <p>Then one day, while scrolling through YouTube for answers, he stumbled upon a video... and that video changed his life. That’s when his adventure with a magical thing called the Eisenhower Matrix began.</p>
+        <p>Stay tuned... and laugh a little—studying isn’t always a tragedy!</p>
 
-  <!-- Header -->
-  <header class="text-center py-10">
-    <h1 class="text-5xl font-bold text-purple-800 drop-shadow-lg">Master Your Time, Master Your Life</h1>
-    <p class="mt-4 text-lg text-gray-700">Discover powerful strategies to manage your time and boost academic success.</p>
-    <a href="#start" class="mt-6 inline-block bg-purple-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-purple-700 transition">
-      Get Started
-    </a>
-  </header>
+        <h2>Eisenhower Matrix: Your Secret Weapon for Time Management</h2>
+        <p>Hey Sami, if you're living an unorganized life, you might feel like time is slipping through your fingers like sand. But did you know there's a secret weapon called the Eisenhower Matrix? This matrix can transform your day from chaos to impressive organization.</p>
 
-  <!-- Hero Image -->
-  <section class="flex justify-center py-6">
-    <img src="https://cdn-icons-png.flaticon.com/512/2784/2784459.png" alt="Time Management Icon" class="w-48 h-48">
-  </section>
+        <h3>How? Simple! The matrix helps you classify tasks based on their importance and urgency. Let me break it down with practical examples so you can apply it to your study life.</h3>
 
-  <!-- Placeholder for your content -->
-  <section id="start" class="bg-white p-10 rounded-t-3xl shadow-inner">
-    <h2 class="text-3xl font-semibold text-center text-purple-800 mb-6">What You'll Learn</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-purple-100 p-6 rounded-xl shadow hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-purple-700">Time Blocking Techniques</h3>
-        <p class="mt-2 text-gray-700">Learn how to schedule your day efficiently using proven time-blocking strategies.</p>
-      </div>
-      <div class="bg-purple-100 p-6 rounded-xl shadow hover:scale-105 transition">
-        <h3 class="text-xl font-bold text-purple-700">Avoiding Procrastination</h3>
-        <p class="mt-2 text-gray-700">Understand the root causes of procrastination and how to beat it step by step.</p>
-      </div>
+        <div class="important-urgent">
+            <h3>1. Important and Urgent Tasks (Do them NOW!)</h3>
+            <p>These are the tasks that must be your top priority. If you have a math exam tomorrow or assignments due today, these are the things you focus on first. Make them the first thing you tackle!</p>
+        </div>
+
+        <div class="important-not-urgent">
+            <h3>2. Important but Not Urgent Tasks (Schedule them)</h3>
+            <p>There are always important tasks in your life, but they’re not urgent. For example, if you have a big project in programming, you need to start working on it gradually even if you don’t have an upcoming deadline. Organization here is key to success! So, setting aside daily time for math or programming study is the way to go.</p>
+        </div>
+
+        <div class="not-important-urgent">
+            <h3>3. Not Important but Urgent Tasks (Delegate them!)</h3>
+            <p>Requests that come from friends or things that aren’t part of your main goals, let others handle them. Sometimes, if something isn't important to you but urgent for others, let them take care of it so you can focus on your priorities.</p>
+        </div>
+
+        <div class="not-important-not-urgent">
+            <h3>4. Not Important and Not Urgent Tasks (Ignore them completely)</h3>
+            <p>If you're busy binge-watching anime or playing video games and you know it’s neither important nor urgent, you need to be strict with yourself and avoid wasting time on these. These are the things you can say “leave them for later, in your free time.”</p>
+        </div>
+
+        <div class="time-management">
+            <h2>Time Management Techniques:</h2>
+            <ul>
+                <li><strong>Pomodoro Technique:</strong> Break your study time into 25-minute sessions, where you focus fully on your task, then take a short break (5 minutes). This ensures higher focus and less mental fatigue.</li>
+                <li><strong>To-Do List:</strong> Write down a list of tasks you need to accomplish every day and focus on the important tasks first.</li>
+                <li><strong>"Eat the Frog" Technique:</strong> Start with the hardest task of the day first, and don’t procrastinate! Once you finish the hardest thing, the rest will feel easier.</li>
+            </ul>
+        </div>
+
+        <div class="sami-tips">
+            <h2>Sami's Tips for NHSM Students: How to Study and Succeed Without Losing Your Mind!</h2>
+            <p>First thing, Sami knows life at NHSM isn’t easy. Every day you’ve got lectures, assignments, and more stuff piling up. If you don’t know the right way, you'll find yourself stuck in a whirlwind! But don’t worry, Sami’s got some tips to help you navigate the journey to success without feeling overwhelmed!</p>
+            <ol>
+                <li><strong>Be Regular with Your Lectures!</strong> The first and most important thing: attend your lectures! Sami discovered, after many attempts to skip them, that showing up is always better than guessing the material later. Lectures aren't just a waste of time, they have key information that will help you understand the subject. So, don’t let a single day go by without attending, even if you feel the subject is boring. Trust me, when you get those "average" grades on the exam, you’ll see the light!</li>
+                <li><strong>Solve Exercises and Apply What You Learn!</strong> Don’t wait until exam time to solve the exercises! Sami always made it a habit to work through exercises every day, and trust me… this is the secret to success. When you solve exercises and go over them with your professors or classmates, you’ll notice your understanding improving. Don’t think you can skip them!</li>
+                <li><strong>YouTube? Yes! But After the Lecture</strong> Sami knows that sometimes, you feel lost during class, but you have a solution: YouTube. But, first, make sure you’ve attended the lecture and understood the basics. If you have trouble understanding something, you can watch YouTube videos from other professors. But don’t spend all your time on YouTube instead of attending lectures, balance is key.</li>
+                <li><strong>Create a Study Schedule</strong> Sami used to set aside specific time for each subject every week. At first, he laughed at himself saying, "There’s never enough time!" But when he organized his schedule with Pomodoro or Eisenhower Matrix, he started seeing better results. Try setting fixed study times and stick to them—jumping from one activity to another will only scatter your focus and cause chaos.</li>
+                <li><strong>Don’t Waste Time on Social Media!</strong> "Sorry, but I have to say this" : Social media wastes your time! Sami tried resisting the temptation of Facebook and Instagram and realized that when he focused on his studies and stopped random scrolling, he got much better results! Don’t let yourself spend hours in front of the screen and then feel like time flew by!</li>
+                <li><strong>Rest is Just as Important as Study!</strong> Even if you want to be the top student in class, don’t forget your health. Sami learned after periods of excessive stress that sleep and rest are just as important as studying. Take breaks between study sessions. When your mind rests, it performs better. So, take a break, go for a walk, enjoy life so you can keep going strong!</li>
+            </ol>
+            <p><strong>Sami’s Final Words:</strong> Stay organized, solve exercises, review with professors, and don’t avoid YouTube. Most importantly, don’t waste your time on useless things. Take care of your health, apply time management techniques... and with a little effort, you’ll be at the top! <span class="hashtag">#You_Won’t_Regret_It!</span></p>
+        </div>
+
+        <div class="golden-resources">
+            <h2>Sami's Golden Resources for NHSM Students: How to Excel in Every Subject?</h2>
+            <p>Hey there, brilliant minds! Sami is back, not just with advice, but with powerful tools to boost your performance in every subject. Let’s goooo!</p>
+
+            <h3>Algebra</h3>
+            <ul>
+                <li><strong>Sami's Tips:</strong></li>
+                <ul>
+                    <li>Attend lectures: This is not optional – it's essential!</li>
+                    <li>Read the professor’s course materials: Go over them before jumping into exercises.</li>
+                    <li>Solve TD exercises: Practice makes perfect!</li>
+                    <li>Prepare lessons in advance: Don’t wait till the last minute!</li>
+                </ul>
+                <li><strong>Recommended YouTube Channels:</strong></li>
+                <ul class="youtube-channels">
+                    <li>15 Min Math Lr</li>
+                    <li>Asma Kf</li>
+                    <li>Oukrimi</li>
+                </ul>
+            </ul>
+
+            <h3>Analysis</h3>
+            <ul>
+                <li><strong>Sami's Tips:</strong></li>
+                <ul>
+                    <li>Understand key concepts like limits, derivatives, and integrals.</li>
+                    <li>Practice regularly with a variety of exercises.</li>
+                </ul>
+                <li><strong>Recommended YouTube Channels:</strong></li>
+                <ul class="youtube-channels">
+                    <li>Practise Mathematics with Benbachir</li>
+                    <li>Warda Maths</li>
+                </ul>
+            </ul>
+
+            <h3>Statistics & Probability</h3>
+            <ul>
+                <li><strong>Sami's Tips:</strong></li>
+                <ul>
+                    <li>Master the formulas (Bayes' theorem, distributions, random variables…).</li>
+                    <li>Solve exercises constantly to reinforce your understanding.</li>
+                </ul>
+                <li><strong>Recommended YouTube Channel:</strong></li>
+                <ul class="youtube-channels">
+                    <li>Warda Maths</li>
+                </ul>
+            </ul>
+
+            <h3>Discrete Mathematics</h3>
+            <ul>
+                <li><strong>Sami's Tips:</strong></li>
+                <ul>
+                    <li>Understand the basics: sets, relations, functions, graphs.</li>
+                    <li>Apply your knowledge through consistent practice.</li>
+                </ul>
+                <li><strong>Recommended YouTube Channels:</strong></li>
+                <ul class="youtube-channels">
+                    <li>Practise Mathematics with Benbachir</li>
+                    <li>Warda Maths</li>
+                </ul>
+            </ul>
+
+            <h3>Physics</h3>
+            <ul>
+                <li><strong>Sami's Tips:</strong></li>
+                <ul>
+                    <li>Attend lectures to grasp theoretical concepts.</li>
+                    <li>Prepare TD exercises for hands-on practice.</li>
+                </ul>
+                <li><strong>Recommended YouTube Channel:</strong></li>
+                <ul class="youtube-channels">
+                    <li>Warda Maths (also covers physics basics)</li>
+                </ul>
+            </ul>
+
+            <h3>Algorithms</h3>
+            <ul>
+                <li><strong>Sami's Tips:</strong></li>
+                <ul>
+                    <li>Master the basics like conditions, loops, and functions.</li>
+                    <li>Practice coding to put theory into action.</li>
+                </ul>
+                <li><strong>Recommended YouTube Channels:</strong></li>
+                <ul class="youtube-channels">
+                    <li>Hassan EL BAHI</li>
+                    <li>AYMEN DEV</li>
+                </ul>
+            </ul>
+
+            <p><strong>Sami’s Final Advice:</strong> Use these resources wisely, organize your time like a pro, and go conquer that leaderboard! You got this, future genius!</p>
+        </div>
+
+        <div class="final-words">
+            <p>And so, my friends, that was Sami's journey — from total chaos to total control.</p>
+            <p>From “I study like I'm boiling milk” to “I study like I'm planning a moon mission!”</p>
+            <p>Sami no longer wastes energy studying aimlessly. Now, he’s smart with how he learns before what he learns.</p>
+            <p>He realized something powerful: The problem wasn’t intelligence, it was organization.</p>
+            <p>So here’s a message for every NHSM student — or any student anywhere:</p>
+            <p>You're not alone. The road is hard, but never impossible!</p>
+            <p>Use the tools we shared, listen in class, prep your TD exercises, and treat every semester like a real-life training ground.</p>
+            <p>Life isn’t a never-ending marathon… it’s a strategic race that needs thinking, timing, and organization.</p>
+            <p>And if you mess up once? It’s not the end.</p>
+            <p>Sami failed twenty times before he got it right — but every time he rose stronger, smiling and saying:</p>
+            <p>“We came to grind, not to chill!”</p>
+            <p>Stay organized. Stay positive. And always keep your eyes on the goal.</p>
+            <p>Good luck, legends… your future is being built today!</p>
+            <p>With simple plans and massive hearts —</p>
+            <p>You are the heroes of this stage. Now go crush it!</p>
+        </div>
     </div>
-  </section>
-<p>Once upon a time, in the land of NHSM, there was a poor student named Sami... He studied so hard his eyes almost bled, lectures felt like oil fields, and exercises were landmines. Every day he’d say, “This time, I’m getting an 18!” But when results came... it was an 8.</p>
-
-<p>He’d ask himself, “Am I on the wrong planet? Does the teacher hate my face? Or am I just dreaming I’m studying?”</p>
-
-<p>Then one day, while scrolling through YouTube for answers, he stumbled upon a video... and that video changed his life. That’s when his adventure with a magical thing called the Eisenhower Matrix began.</p>
-
-<p>Stay tuned... and laugh a little—studying isn’t always a tragedy!</p>
-<h1>Eisenhower Matrix: Your Secret Weapon for Time Management💥⏰</h1>
-
-<p>Hey Sami, if you're living an unorganized life, you might feel like time is slipping through your fingers like sand. But did you know there's a secret weapon called the Eisenhower Matrix? This matrix can transform your day from chaos to impressive organization. 😎</p>
-
-<p>How? Simple! The matrix helps you classify tasks based on their importance and urgency. Let me break it down with practical examples so you can apply it to your study life.</p>
-
-<h2>1. Important and Urgent Tasks (Do them NOW!) 🔥</h2>
-<p>These are the tasks that must be your top priority. If you have a math exam tomorrow or assignments due today, these are the things you focus on first. Make them the first thing you tackle! 💪</p>
-
-<h2>2. Important but Not Urgent Tasks (Schedule them) 📅</h2>
-<p>There are always important tasks in your life, but they’re not urgent. For example, if you have a big project in programming, you need to start working on it gradually even if you don’t have an upcoming deadline. Organization here is key to success! So, setting aside daily time for math or programming study is the way to go.</p>
-
-<h2>3. Not Important but Urgent Tasks (Delegate them!) ⚡</h2>
-<p>Requests that come from friends or things that aren’t part of your main goals, let others handle them. Sometimes, if something isn't important to you but urgent for others, let them take care of it so you can focus on your priorities.</p>
-
-<h2>4. Not Important and Not Urgent Tasks (Ignore them completely) 🛑</h2>
-<p>If you're busy binge-watching anime or playing video games and you know it’s neither important nor urgent, you need to be strict with yourself and avoid wasting time on these. These are the things you can say “leave them for later, in your free time.”</p>
-
-<hr>
-
-<h2>Time Management Techniques:</h2>
-
-<h3>Pomodoro Technique</h3>
-<p>Break your study time into 25-minute sessions, where you focus fully on your task, then take a short break (5 minutes). This ensures higher focus and less mental fatigue. ⏳</p>
-
-<h3>To-Do List</h3>
-<p>Write down a list of tasks you need to accomplish every day and focus on the important tasks first. 🌟</p>
-
-<h3>"Eat the Frog" Technique</h3>
-<p>Start with the hardest task of the day first, and don’t procrastinate! Once you finish the hardest thing, the rest will feel easier. 🐸</p>
-<h2>Sami's Tips for NHSM Students: How to Study and Succeed Without Losing Your Mind! 😜📚</h2>
-
-<p>First thing, Sami knows life at NHSM isn’t easy. Every day you’ve got lectures, assignments, and more stuff piling up. If you don’t know the right way, you'll find yourself stuck in a whirlwind! 😅 But don’t worry, Sami’s got some tips to help you navigate the journey to success without feeling overwhelmed! 😆</p>
-
-<h3>1. Be Regular with Your Lectures! 🚨</h3>
-<p>The first and most important thing: attend your lectures! Sami discovered, after many attempts to skip them, that showing up is always better than guessing the material later. Lectures aren't just a waste of time, they have key information that will help you understand the subject. So, don’t let a single day go by without attending, even if you feel the subject is boring. Trust me, when you get those "average" grades on the exam, you’ll see the light! 🌟</p>
-
-<h3>2. Solve Exercises and Apply What You Learn! 🔮</h3>
-<p>Don’t wait until exam time to solve the exercises! Sami always made it a habit to work through exercises every day, and trust me… this is the secret to success. When you solve exercises and go over them with your professors or classmates, you’ll notice your understanding improving. Don’t think you can skip them! 😈</p>
-
-<h3>3. YouTube? Yes! But After the Lecture 📺</h3>
-<p>Sami knows that sometimes, you feel lost during class, but you have a solution: YouTube. But, first, make sure you’ve attended the lecture and understood the basics. If you have trouble understanding something, you can watch YouTube videos from other professors. But don’t spend all your time on YouTube instead of attending lectures, balance is key. 👌</p>
-
-<h3>4. Create a Study Schedule 🗓️</h3>
-<p>Sami used to set aside specific time for each subject every week. At first, he laughed at himself saying, "There’s never enough time!" But when he organized his schedule with Pomodoro or Eisenhower Matrix, he started seeing better results. Try setting fixed study times and stick to them—jumping from one activity to another will only scatter your focus and cause chaos. 🧠⚡</p>
-
-<h3>5. Don’t Waste Time on Social Media! 🚫</h3>
-<p>"Sorry, but I have to say this" 😅: Social media wastes your time! Sami tried resisting the temptation of Facebook and Instagram and realized that when he focused on his studies and stopped random scrolling, he got much better results! Don’t let yourself spend hours in front of the screen and then feel like time flew by! 🎮📱</p>
-
-<h3>6. Rest is Just as Important as Study! 🛌</h3>
-<p>Even if you want to be the top student in class, don’t forget your health. Sami learned after periods of excessive stress that sleep and rest are just as important as studying. Take breaks between study sessions. When your mind rests, it performs better. So, take a break, go for a walk, enjoy life so you can keep going strong!</p>
-
-<hr>
-
-<h3>Sami’s Final Words</h3>
-<p>Stay organized, solve exercises, review with professors, and don’t avoid YouTube. Most importantly, don’t waste your time on useless things. Take care of your health, apply time management techniques... and with a little effort, you’ll be at the top! 🚀🔥</p>
-
-<p><strong>#You_Won’t_Regret_It!</strong></p>
-<h1>📚 Sami's Golden Resources for NHSM Students: How to Excel in Every Subject? 💡</h1>
-<p>Hey there, brilliant minds! Sami is back, not just with advice, but with powerful tools to boost your performance in every subject. Let’s goooo! 🧠🔥</p>
-
-<hr>
-
-<h2>🧮 Algebra</h2>
-<h3>Sami's Tips:</h3>
-<ul>
-    <li>Attend lectures: This is not optional – it's essential!</li>
-    <li>Read the professor’s course materials: Go over them before jumping into exercises.</li>
-    <li>Solve TD exercises: Practice makes perfect!</li>
-    <li>Prepare lessons in advance: Don’t wait till the last minute!</li>
-</ul>
-<h3>Recommended YouTube Channels:</h3>
-<ul>
-    <li><a href="https://www.youtube.com/channel/15-Min-Math-Lr">15 Min Math Lr</a></li>
-    <li><a href="https://www.youtube.com/channel/Asma-Kf">Asma Kf</a></li>
-    <li><a href="https://www.youtube.com/channel/Oukrimi">Oukrimi</a></li>
-</ul>
-
-<hr>
-
-<h2>📈 Analysis</h2>
-<h3>Sami's Tips:</h3>
-<ul>
-    <li>Understand key concepts like limits, derivatives, and integrals.</li>
-    <li>Practice regularly with a variety of exercises.</li>
-</ul>
-<h3>Recommended YouTube Channels:</h3>
-<ul>
-    <li><a href="https://www.youtube.com/channel/Practise-Mathematics-with-Benbachir">Practise Mathematics with Benbachir</a></li>
-    <li><a href="https://www.youtube.com/channel/Warda-Maths">Warda Maths</a></li>
-</ul>
-
-<hr>
-
-<h2>📊 Statistics & Probability</h2>
-<h3>Sami's Tips:</h3>
-<ul>
-    <li>Master the formulas (Bayes' theorem, distributions, random variables…).</li>
-    <li>Solve exercises constantly to reinforce your understanding.</li>
-</ul>
-<h3>Recommended YouTube Channel:</h3>
-<ul>
-    <li><a href="https://www.youtube.com/channel/Warda-Maths">Warda Maths</a></li>
-</ul>
-
-<hr>
-
-<h2>🔢 Discrete Mathematics</h2>
-<h3>Sami's Tips:</h3>
-<ul>
-    <li>Understand the basics: sets, relations, functions, graphs.</li>
-    <li>Apply your knowledge through consistent practice.</li>
-</ul>
-<h3>Recommended YouTube Channels:</h3>
-<ul>
-    <li><a href="https://www.youtube.com/channel/Practise-Mathematics-with-Benbachir">Practise Mathematics with Benbachir</a></li>
-    <li><a href="https://www.youtube.com/channel/Warda-Maths">Warda Maths</a></li>
-</ul>
-
-<hr>
-
-<h2>🧪 Physics</h2>
-<h3>Sami's Tips:</h3>
-<ul>
-    <li>Attend lectures to grasp theoretical concepts.</li>
-    <li>Prepare TD exercises for hands-on practice.</li>
-</ul>
-<h3>Recommended YouTube Channel:</h3>
-<ul>
-    <li><a href="https://www.youtube.com/channel/Warda-Maths">Warda Maths</a> (also covers physics basics)</li>
-</ul>
-
-<hr>
-
-<h2>💻 Algorithms</h2>
-<h3>Sami's Tips:</h3>
-<ul>
-    <li>Master the basics like conditions, loops, and functions.</li>
-    <li>Practice coding to put theory into action.</li>
-</ul>
-<h3>Recommended YouTube Channels:</h3>
-<ul>
-    <li><a href="https://www.youtube.com/channel/Hassan-EL-BAHI">Hassan EL BAHI</a></li>
-    <li><a href="https://www.youtube.com/channel/AYMEN-DEV">AYMEN DEV</a></li>
-</ul>
-
-<hr>
-
-<h3>🎯 Sami’s Final Advice:</h3>
-<p>Use these resources wisely, organize your time like a pro, and go conquer that leaderboard! You got this, future genius! 💪📘</p>
-<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 700px; margin: auto; padding: 20px;">
-  <p>And so, my friends, that was Sami's journey — from total chaos to total control.<br>
-  From “I study like I'm boiling milk” to “I study like I'm planning a moon mission!”</p>
-
-  <p>Sami no longer wastes energy studying aimlessly. Now, he’s smart with how he learns before what he learns.</p>
-
-  <p>He realized something powerful: <strong>The problem wasn’t intelligence, it was organization.</strong><br>
-  So here’s a message for every NHSM student — or any student anywhere:</p>
-
-  <p style="font-size: 1.1em;"><em>You're not alone. The road is hard, but never impossible!</em></p>
-
-  <p>Use the tools we shared, listen in class, prep your TD exercises, and treat every semester like a real-life training ground.<br>
-  Life isn’t a never-ending marathon… it’s a strategic race that needs thinking, timing, and organization.</p>
-
-  <p>And if you mess up once? It’s not the end.<br>
-  Sami failed twenty times before he got it right — but every time he rose stronger, smiling and saying:<br>
-  <strong>“We came to grind, not to chill!”</strong></p>
-
-  <p style="margin-top: 30px;"><strong>Stay organized. Stay positive. And always keep your eyes on the goal.</strong></p>
-
-  <p>Good luck, legends… your future is being built today!<br>
-  With simple plans and massive hearts —<br>
-  <strong>You are the heroes of this stage. Now go crush it!</strong></p>
-</div>
-<!-- End of HTML -->
+</body>
+</html>
+Show quoted text
+          
